@@ -5,29 +5,22 @@ public class BinarySearch {
     static int binSearchX(int[] a, int n, int key)
     {
         int left=0;
-        int center = n/2;
-        int right=a.length;
+        int right = n-1;
 
         int resultIdx = -1;
 
-        int i;
-        for(i=0 ; i<n ; i++)
+        do
         {
-            if (a[center] == key)
-            {
+            int center = (left + right)/2;
+            if (a[center] == key) {
                 resultIdx = center;
+                break;
             }
             else if (a[center] < key)
-            {
-                right = center;
-                center = (left+right)/2;
-            }
+                right = center + 1;
             else
-            {
-                left = center;
-                center = (left+right)/2;
-            }
-        }
+                left = center - 1;
+        } while (left <= right);
 
         while((resultIdx>0) && (a[resultIdx-1] == a[resultIdx]))
         {
