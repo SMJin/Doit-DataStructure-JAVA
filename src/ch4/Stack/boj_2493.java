@@ -46,40 +46,22 @@ public class boj_2493 {
         private static StringTokenizer st;
 
         static void init() {
-
             br = new BufferedReader(new InputStreamReader(System.in));
-
             st = new StringTokenizer("");
-
         }
-
-
 
         static String next() {
-
             while (!st.hasMoreTokens()) {
-
                 try {
-
                     st = new StringTokenizer(br.readLine());
-
                 } catch (IOException e) {
-
                 }
-
             }
-
             return st.nextToken();
-
         }
-
-
 
         static int nextInt() {
-
             return Integer.parseInt(next());
-
         }
-
     }
 }
