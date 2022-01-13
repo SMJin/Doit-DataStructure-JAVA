@@ -2,4 +2,5 @@
 # [팩토리얼](./Recursion/Factorial.java)
 # [하노이 탑](./Recursion/Hanoi.java)
 ##### [boj_1914 :: 하노이 탑](./Recursion/boj_1914.java)
+# [8퀸](./Recursion/EightQueen.java)
 # [재귀를 스택으로 풀어보기](./NonRecursion/Recur.java)
