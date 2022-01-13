@@ -4,8 +4,7 @@ public class QuickSort {
 
     static void quickSort(int[] a, int pl, int pr) {
         int start = pl, end = pr;
-        int pi = (pl+pr)/2;
-        int pivot = a[pi];
+        int pivot = a[(pl+pr)/2];
 
         showArray(a);
         System.out.println("pivot 값은 " + pivot + "입니다.");
@@ -15,16 +14,14 @@ public class QuickSort {
         do {
             while (a[pl] < pivot) pl++;
             while (a[pr] > pivot) pr--;
-            //System.out.println("a[" + pl + "]: " + a[pl] + ", a[" + pr + "]: " + a[pr]);
             if (pl <= pr)
                 swap(a, pl++, pr--);
-            //showArray(a);
         } while(pl <= pr);
 
-        if (start + 1 < pr)
+        if (start < pr)
             quickSort(a, start, pr);
-        if ((pr+1) + 1 < end)
-            quickSort(a, pr+1, end);
+        if (pl < end)
+            quickSort(a, pl, end);
     }
 
     private static void swap(int[] array, int i, int j) {
