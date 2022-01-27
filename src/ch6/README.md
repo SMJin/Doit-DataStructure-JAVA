@@ -9,3 +9,5 @@
 ###### 삽입정렬은, "이미 정렬된 상태"에 가까울 수록 정렬 속도가 매우 빨라지지만, 반대의 경우에는 이동해야 하는 횟수가 많아진다.
 # [Quick Sort](./Quick/QuickSort.java)
 ### [Partition](./Quick/Partition.java) 코드는 퀵소트를 위해서 파티션 하는 법을 연습한 java code 이다.
+# [MergeSort](./Merge/MergeSort.java), [MyMergeSort](./Merge/MyMergeSort.java)
+### [MergeArray](./Merge/MergeArray.java) 코드는 병합 정렬의 임시 공간(buff)를 사용하여 정렬하는 법을 익히기 위한 java code 이다.
